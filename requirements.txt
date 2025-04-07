@@ -6,5 +6,5 @@ scipy
 pandas
 librosa
 tqdm
-
+pytorch-lightning
 

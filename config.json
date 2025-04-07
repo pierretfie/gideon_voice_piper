@@ -5,6 +5,7 @@
   "model_args": {},
   "phoneme_language": "en-us",
   "use_phonemes": true,
+  "phoneme_cache_path": "/root/gideon_voice_piper/cache", 
   "datasets": [
     {
       "formatter": "ljspeech",

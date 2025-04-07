@@ -1,9 +1,18 @@
 {
   "output_path": "/root/output/",
-  "dataset": {
-    "formatter": "ljspeech",
-    "path": "/root/gideon_voice_piper/my_gideon_dataset"
-  },
+  "run_name": "fine-tune-tacotron2",
+  "model": "Tacotron2",
+  "model_args": {},
+  "phoneme_language": "en-us",
+  "use_phonemes": true,
+  "datasets": [
+    {
+      "formatter": "ljspeech",
+      "dataset_path": "/root/gideon_voice_piper/my_gideon_dataset",
+      "meta_file_train": "metadata.csv",
+      "meta_file_val": "metadata.csv"
+    }
+  ],
   "audio": {
     "sample_rate": 22050,
     "win_length": 1024,
@@ -13,8 +22,6 @@
     "mel_fmin": 0.0,
     "mel_fmax": 8000.0
   },
-  "model": "Tacotron2",
-  "run_name": "fine-tune-tacotron2",
   "trainer": {
     "epochs": 500,
     "batch_size": 32,
@@ -34,8 +41,6 @@
     "mixed_precision": true
   },
   "loss": "Tacotron2Loss",
-  "phoneme_language": "en-us",
-  "use_phonemes": true,
   "num_loader_workers": 4,
   "compute_input_seq_cache": true,
   "compute_mel_cache": true

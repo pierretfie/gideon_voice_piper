@@ -25,8 +25,8 @@
   },
   "trainer": {
     "epochs": 500,
-    "batch_size": 32,
-    "eval_batch_size": 16,
+    "batch_size": 4,
+    "eval_batch_size": 2,
     "optimizer": "adam",
     "learning_rate": 0.0001,
     "lr_scheduler": "ExponentialLR",
@@ -42,7 +42,7 @@
     "mixed_precision": true
   },
   "loss": "Tacotron2Loss",
-  "num_loader_workers": 4,
+  "num_loader_workers": 1,
   "compute_input_seq_cache": true,
   "compute_mel_cache": true
 }

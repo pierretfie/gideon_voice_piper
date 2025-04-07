@@ -9,8 +9,8 @@
     {
       "formatter": "ljspeech",
       "dataset_path": "/root/gideon_voice_piper/my_gideon_dataset",
-      "meta_file_train": "metadata.csv",
-      "meta_file_val": "metadata.csv"
+      "meta_file_train": "/root/gideon_voice_piper/my_gideon_dataset/metadata.csv",
+      "meta_file_val": "/root/gideon_voice_piper/my_gideon_dataset/metadata.csv"
     }
   ],
   "audio": {

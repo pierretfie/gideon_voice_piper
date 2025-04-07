@@ -7,14 +7,4 @@ pandas
 librosa
 tqdm
 
-# Audio processing
-soundfile
-sox
 
-# FastPitch and Piper
-@nemo_toolkit[all] @ git+https://github.com/NVIDIA/NeMo.git@main
-#piper @ git+https://github.com/rhasspy/piper.git
-
-# Optional but useful for dev/debug
-matplotlib
-jupyter

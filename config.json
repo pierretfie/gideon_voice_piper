@@ -2,10 +2,14 @@
   "output_path": "/root/output/",
   "run_name": "fine-tune-tacotron2",
   "model": "Tacotron2",
-  "model_args": {},
+  "model_args": {
+    "max_decoder_steps": 1000,
+    "stopnet_pos_weight": 5.0,
+    "stopnet_threshold": 0.3
+  },
   "phoneme_language": "en-us",
   "use_phonemes": true,
-  "phoneme_cache_path": "/root/gideon_voice_piper/cache", 
+  "phoneme_cache_path": "/root/gideon_voice_piper/cache",
   "datasets": [
     {
       "formatter": "ljspeech",
@@ -46,3 +50,4 @@
   "compute_input_seq_cache": true,
   "compute_mel_cache": true
 }
+

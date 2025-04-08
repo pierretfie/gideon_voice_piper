@@ -1,3 +1,4 @@
+#uses python3.12 or less 3.11
 from pydub import AudioSegment
 import os
 
